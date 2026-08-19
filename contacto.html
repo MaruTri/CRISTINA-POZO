@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contacto y Reservas | Cristina Pozo Belleza & Bienestar</title>
+<meta name="description" content="Reserva tu cita en Cristina Pozo, Calle Marchena 48, La Puebla de Cazalla. Llama o escribe al 615 92 31 68 — horario de martes a viernes." />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Cristina Pozo Belleza & Bienestar" />
+<link rel="canonical" href="contacto.html" />
+
+<meta property="og:title" content="Contacto y Reservas | Cristina Pozo" />
+<meta property="og:description" content="Reserva tu cita: Calle Marchena 48, La Puebla de Cazalla. Tel. 615 92 31 68." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="contacto.html" />
+<meta property="og:image" content="assets/hero-poster.jpg" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:site_name" content="Cristina Pozo Belleza & Bienestar" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Inicio","item":"index.html"},
+    {"@type":"ListItem","position":2,"name":"Contacto","item":"contacto.html"}
+  ]
+}
+</script>
+
+<style>
+:root{
+  --color-primary:#7C9473;--color-primary-dark:#57694F;--color-dark:#22303B;--color-accent:#D98F76;
+  --color-cream:#FAF7F1;--color-white:#FFFFFF;--color-text:#262620;--color-text-light:#6B6B62;
+  --radius:16px;--shadow:0 12px 32px rgba(34,48,59,0.10);--shadow-hover:0 18px 40px rgba(34,48,59,0.16);
+  --font-heading:'Cormorant Garamond', serif;--font-body:'Jost', sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--font-body);color:var(--color-text);background:var(--color-cream);line-height:1.6;overflow-x:hidden;}
+img{max-width:100%;display:block;}
+a{text-decoration:none;color:inherit;}
+ul{list-style:none;}
+h1,h2,h3,h4{font-family:var(--font-heading);font-weight:600;color:var(--color-dark);line-height:1.15;}
+.container{max-width:1180px;margin:0 auto;padding:0 24px;}
+.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.75rem;color:var(--color-primary-dark);font-weight:500;margin-bottom:10px;display:block;}
+.section{padding:96px 0;}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 30px;border-radius:999px;font-size:.95rem;font-weight:500;border:1.5px solid transparent;cursor:pointer;transition:all .25s ease;white-space:nowrap;}
+.btn-primary{background:var(--color-primary);color:var(--color-white);}
+.btn-primary:hover{background:var(--color-primary-dark);transform:translateY(-2px);box-shadow:var(--shadow-hover);}
+.btn-outline{background:transparent;border-color:var(--color-dark);color:var(--color-dark);}
+.btn-outline:hover{background:var(--color-dark);color:var(--color-white);}
+
+.site-header{position:fixed;top:0;left:0;width:100%;z-index:100;background:rgba(250,247,241,.94);backdrop-filter:blur(10px);box-shadow:0 4px 20px rgba(34,48,59,.06);padding:14px 0;}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;}
+.logo{display:flex;align-items:center;gap:12px;}
+.logo-img{height:40px;width:auto;display:block;}
+.main-nav{display:flex;gap:36px;}
+.main-nav a{font-size:.92rem;font-weight:500;color:var(--color-dark);position:relative;padding:4px 0;}
+.main-nav a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--color-primary);transition:width .25s ease;}
+.main-nav a:hover::after,.main-nav a.active::after{width:100%;}
+.header-actions{display:flex;align-items:center;gap:18px;}
+.phone-link{font-size:.9rem;font-weight:500;color:var(--color-dark);}
+.nav-toggle{display:none;background:none;border:none;font-size:1.6rem;color:var(--color-dark);cursor:pointer;}
+@media(max-width:860px){
+  .main-nav{position:fixed;top:0;right:-100%;height:100vh;width:78%;max-width:320px;background:var(--color-cream);flex-direction:column;justify-content:center;align-items:flex-start;padding:0 40px;gap:26px;transition:right .35s ease;box-shadow:-10px 0 30px rgba(0,0,0,.1);}
+  .main-nav.open{right:0;}
+  .main-nav a{font-size:1.2rem;}
+  .header-actions .btn-primary{padding:10px 18px;font-size:.85rem;}
+  .phone-link{display:none;}
+  .nav-toggle{display:block;z-index:120;}
+}
+
+.page-hero{padding:150px 0 60px;background:linear-gradient(160deg,#F2EEE3 0%, #E7E9DC 45%, #DCE3D2 100%);text-align:center;}
+.page-hero h1{font-size:clamp(2.4rem,5vw,3.4rem);margin-bottom:16px;}
+.page-hero p{color:var(--color-text-light);max-width:560px;margin:0 auto;font-size:1.05rem;}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease, transform .6s ease;}
+.reveal.in-view{opacity:1;transform:translateY(0);}
+
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr;}}
+
+.info-card{background:var(--color-white);border-radius:var(--radius);box-shadow:var(--shadow);padding:36px;margin-bottom:22px;}
+.info-card h3{font-size:1.15rem;margin-bottom:18px;color:var(--color-dark);}
+.info-row{display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:1px solid rgba(34,48,59,.06);}
+.info-row:last-child{border-bottom:none;}
+.info-row .icon{
+  width:40px;height:40px;border-radius:50%;background:var(--color-cream);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--color-primary-dark);font-weight:600;
+}
+.info-row a, .info-row span.text{font-size:.95rem;color:var(--color-text);}
+.info-row a:hover{color:var(--color-primary-dark);}
+
+.hours-mini{width:100%;}
+.hours-mini .hours-row{display:flex;justify-content:space-between;padding:9px 0;font-size:.9rem;border-bottom:1px solid rgba(34,48,59,.05);}
+.hours-mini .hours-row:last-child{border-bottom:none;}
+.hours-mini .day{font-weight:500;}
+.hours-mini .time{color:var(--color-text-light);}
+.hours-mini .time.closed{color:var(--color-accent);}
+
+.map-card{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);}
+.map-visual{
+  background-image:url('assets/hero-poster.jpg');background-size:cover;background-position:center;
+  min-height:260px;position:relative;
+}
+.map-visual-scrim{
+  background:linear-gradient(180deg, rgba(34,48,59,.25), rgba(34,48,59,.72));
+  min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:30px;
+}
+.map-visual-scrim p{color:#fff;font-weight:500;margin-bottom:16px;}
+
+/* Form */
+.form-card{background:var(--color-white);border-radius:var(--radius);box-shadow:var(--shadow);padding:40px;}
+.form-card h2{font-size:1.6rem;margin-bottom:8px;}
+.form-card > p{color:var(--color-text-light);margin-bottom:28px;font-size:.92rem;}
+.form-group{margin-bottom:20px;}
+.form-group label{display:block;font-size:.85rem;font-weight:500;margin-bottom:8px;color:var(--color-dark);}
+.form-group input, .form-group select, .form-group textarea{
+  width:100%;padding:13px 16px;border-radius:10px;border:1.5px solid rgba(34,48,59,.14);
+  font-family:var(--font-body);font-size:.95rem;background:var(--color-cream);color:var(--color-text);
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus{outline:none;border-color:var(--color-primary);}
+.form-group textarea{resize:vertical;min-height:110px;}
+.form-note{font-size:.78rem;color:var(--color-text-light);margin-top:16px;}
+.form-success{
+  display:none;background:var(--color-cream);border-radius:10px;padding:16px 20px;
+  color:var(--color-primary-dark);font-size:.9rem;margin-top:18px;border:1px solid rgba(124,148,115,.3);
+}
+.form-success.show{display:block;}
+
+.site-footer{background:var(--color-dark);color:rgba(255,255,255,.82);padding:70px 0 24px;margin-top:96px;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:46px;border-bottom:1px solid rgba(255,255,255,.12);}
+.site-footer .logo-img{filter:brightness(0) invert(1);opacity:.95;}
+.footer-brand p{margin-top:16px;font-size:.9rem;color:rgba(255,255,255,.6);max-width:280px;}
+.footer-col h4{color:var(--color-white);font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:18px;font-weight:600;}
+.footer-col a,.footer-col p{display:block;font-size:.92rem;color:rgba(255,255,255,.7);margin-bottom:10px;}
+.footer-col a:hover{color:var(--color-white);}
+.footer-social{display:flex;gap:12px;margin-top:6px;}
+.footer-social a{width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;transition:background .25s ease;}
+.footer-social a:hover{background:var(--color-primary);}
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:24px;font-size:.8rem;color:rgba(255,255,255,.5);}
+@media(max-width:860px){.footer-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:560px){.footer-grid{grid-template-columns:1fr;}.footer-bottom{flex-direction:column;text-align:center;}}
+</style>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="Cristina Pozo Belleza & Bienestar - Logo" class="logo-img" />
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html" class="active">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+34615923168" class="phone-link">615 92 31 68</a>
+      <a href="contacto.html" class="btn btn-primary">Reservar cita</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">&#9776;</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow reveal">Contacto</span>
+    <h1 class="reveal">Reserva tu cita</h1>
+    <p class="reveal">Escríbenos, llámanos o pásate por el centro — estaremos encantadas de atenderte.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <div class="info-card reveal">
+          <h3>Datos de contacto</h3>
+          <div class="info-row"><span class="icon">☎</span><a href="tel:+34615923168">615 92 31 68</a></div>
+          <div class="info-row"><span class="icon">✆</span><a href="https://wa.me/34615923168" target="_blank" rel="noopener">WhatsApp: 615 92 31 68</a></div>
+          <div class="info-row"><span class="icon">@</span><a href="mailto:empleocristinapozo@gmx.es">empleocristinapozo@gmx.es</a></div>
+          <div class="info-row"><span class="icon">📍</span><span class="text">Calle Marchena 48, La Puebla de Cazalla, España</span></div>
+        </div>
+
+        <div class="info-card reveal d1">
+          <h3>Horario de atención</h3>
+          <div class="hours-mini">
+            <div class="hours-row"><span class="day">Lunes</span><span class="time closed">Cerrado</span></div>
+            <div class="hours-row"><span class="day">Martes</span><span class="time">10:00–13:30 / 17:00–20:30</span></div>
+            <div class="hours-row"><span class="day">Miércoles</span><span class="time">10:00–14:00</span></div>
+            <div class="hours-row"><span class="day">Jueves</span><span class="time">10:00–14:00</span></div>
+            <div class="hours-row"><span class="day">Viernes</span><span class="time">10:00–14:00</span></div>
+            <div class="hours-row"><span class="day">Sábado</span><span class="time closed">Cerrado</span></div>
+            <div class="hours-row"><span class="day">Domingo</span><span class="time closed">Cerrado</span></div>
+          </div>
+        </div>
+
+        <div class="map-card reveal d2">
+          <div class="map-visual">
+            <div class="map-visual-scrim">
+              <p>Calle Marchena 48<br>La Puebla de Cazalla, España</p>
+              <a href="https://www.google.com/maps/search/?api=1&query=Calle+Marchena+48%2C+La+Puebla+de+Cazalla%2C+Espa%C3%B1a" target="_blank" rel="noopener" class="btn btn-outline" style="border-color:#fff;color:#fff;">Ver mapa</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card reveal d1">
+        <h2>Solicita tu cita</h2>
+        <p>Rellena el formulario y te confirmamos disponibilidad lo antes posible. También puedes escribirnos directamente por WhatsApp.</p>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="nombre">Nombre y apellidos</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required />
+          </div>
+          <div class="form-group">
+            <label for="servicio">Servicio de interés</label>
+            <select id="servicio" name="servicio">
+              <option value="">Selecciona un servicio (opcional)</option>
+              <option>Depilación</option>
+              <option>Tratamientos corporales</option>
+              <option>Tratamientos faciales</option>
+              <option>IPL — Fotodepilación</option>
+              <option>Otro / no lo sé todavía</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos qué necesitas o el día que prefieres..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Enviar solicitud</button>
+          <p class="form-note"><!-- REVISAR: este formulario aún no está conectado a ningún envío real (email/CRM). Hay que integrarlo con un servicio de formularios o backend antes de publicar la web. --> Al enviar, te contactaremos por teléfono o WhatsApp para confirmar tu cita.</p>
+          <div class="form-success" id="formSuccess">¡Gracias! Hemos recibido tu solicitud — te contactaremos muy pronto. (Recuerda: falta conectar este formulario a un envío real, ver nota de instalación.)</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img src="assets/logo.png" alt="Cristina Pozo Belleza & Bienestar - Logo" class="logo-img" />
+        </a>
+        <p>Centro de estética integral. Salud, belleza y bienestar de la mano, con trato cercano e individualizado.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="tel:+34615923168">615 92 31 68</a>
+        <a href="https://wa.me/34615923168" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:empleocristinapozo@gmx.es">empleocristinapozo@gmx.es</a>
+      </div>
+      <div class="footer-col">
+        <h4>Dirección</h4>
+        <p>Calle Marchena 48<br>La Puebla de Cazalla, España</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">i</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Cristina Pozo Belleza &amp; Bienestar. Todos los derechos reservados.</span>
+      <span>La Puebla de Cazalla, España</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var header = document.getElementById('siteHeader');
+  var nav = document.getElementById('mainNav');
+  var toggle = document.getElementById('navToggle');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 40){ header.classList.add('scrolled'); } else { header.classList.remove('scrolled'); }
+  });
+  toggle.addEventListener('click', function(){ nav.classList.toggle('open'); });
+  nav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ nav.classList.remove('open'); }); });
+
+  var revealEls = document.querySelectorAll('.reveal');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){ entry.target.classList.add('in-view'); io.unobserve(entry.target); }
+    });
+  }, {threshold:.15});
+  revealEls.forEach(function(el){ io.observe(el); });
+
+  var form = document.getElementById('contactForm');
+  var success = document.getElementById('formSuccess');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    success.classList.add('show');
+    form.reset();
+  });
+})();
+</script>
+</body>
+</html>

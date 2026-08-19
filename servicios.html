@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Servicios y Precios | Cristina Pozo Belleza & Bienestar</title>
+<meta name="description" content="Todos los tratamientos de Cristina Pozo en La Puebla de Cazalla: depilación, faciales, corporales e IPL, con precios y duración. Reserva al 615 92 31 68." />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Cristina Pozo Belleza & Bienestar" />
+<link rel="canonical" href="servicios.html" />
+
+<meta property="og:title" content="Servicios y Precios | Cristina Pozo" />
+<meta property="og:description" content="Depilación, tratamientos faciales, corporales e IPL. Consulta precios y duración de cada servicio." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="servicios.html" />
+<meta property="og:image" content="assets/hero-poster.jpg" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:site_name" content="Cristina Pozo Belleza & Bienestar" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Inicio","item":"index.html"},
+    {"@type":"ListItem","position":2,"name":"Servicios","item":"servicios.html"}
+  ]
+}
+</script>
+
+<style>
+:root{
+  --color-primary:#7C9473;
+  --color-primary-dark:#57694F;
+  --color-dark:#22303B;
+  --color-accent:#D98F76;
+  --color-cream:#FAF7F1;
+  --color-white:#FFFFFF;
+  --color-text:#262620;
+  --color-text-light:#6B6B62;
+  --radius:16px;
+  --shadow:0 12px 32px rgba(34,48,59,0.10);
+  --shadow-hover:0 18px 40px rgba(34,48,59,0.16);
+  --font-heading:'Cormorant Garamond', serif;
+  --font-body:'Jost', sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--font-body);color:var(--color-text);background:var(--color-cream);line-height:1.6;overflow-x:hidden;}
+img{max-width:100%;display:block;}
+a{text-decoration:none;color:inherit;}
+ul{list-style:none;}
+h1,h2,h3,h4{font-family:var(--font-heading);font-weight:600;color:var(--color-dark);line-height:1.15;}
+.container{max-width:1180px;margin:0 auto;padding:0 24px;}
+.eyebrow{font-family:var(--font-body);text-transform:uppercase;letter-spacing:.18em;font-size:.75rem;color:var(--color-primary-dark);font-weight:500;margin-bottom:10px;display:block;}
+.section{padding:96px 0;}
+.section-header{max-width:640px;margin:0 auto 40px;text-align:center;}
+.section-header h2{font-size:clamp(2rem,4vw,2.75rem);}
+.section-header p{color:var(--color-text-light);margin-top:14px;font-size:1.05rem;}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 30px;border-radius:999px;font-family:var(--font-body);font-size:.95rem;font-weight:500;letter-spacing:.01em;border:1.5px solid transparent;cursor:pointer;transition:all .25s ease;white-space:nowrap;}
+.btn-primary{background:var(--color-primary);color:var(--color-white);}
+.btn-primary:hover{background:var(--color-primary-dark);transform:translateY(-2px);box-shadow:var(--shadow-hover);}
+.btn-outline{background:transparent;border-color:var(--color-dark);color:var(--color-dark);}
+.btn-outline:hover{background:var(--color-dark);color:var(--color-white);}
+
+/* Header (shared) */
+.site-header{position:fixed;top:0;left:0;width:100%;z-index:100;background:rgba(250,247,241,.94);backdrop-filter:blur(10px);box-shadow:0 4px 20px rgba(34,48,59,.06);padding:14px 0;transition:padding .3s ease;}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;}
+.logo{display:flex;align-items:center;gap:12px;}
+.logo-img{height:40px;width:auto;display:block;}
+.main-nav{display:flex;gap:36px;}
+.main-nav a{font-size:.92rem;font-weight:500;color:var(--color-dark);position:relative;padding:4px 0;}
+.main-nav a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--color-primary);transition:width .25s ease;}
+.main-nav a:hover::after,.main-nav a.active::after{width:100%;}
+.header-actions{display:flex;align-items:center;gap:18px;}
+.phone-link{font-size:.9rem;font-weight:500;color:var(--color-dark);}
+.nav-toggle{display:none;background:none;border:none;font-size:1.6rem;color:var(--color-dark);cursor:pointer;}
+@media(max-width:860px){
+  .main-nav{position:fixed;top:0;right:-100%;height:100vh;width:78%;max-width:320px;background:var(--color-cream);flex-direction:column;justify-content:center;align-items:flex-start;padding:0 40px;gap:26px;transition:right .35s ease;box-shadow:-10px 0 30px rgba(0,0,0,.1);}
+  .main-nav.open{right:0;}
+  .main-nav a{font-size:1.2rem;}
+  .header-actions .btn-primary{padding:10px 18px;font-size:.85rem;}
+  .phone-link{display:none;}
+  .nav-toggle{display:block;z-index:120;}
+}
+
+/* Page hero */
+.page-hero{padding:150px 0 60px;background:linear-gradient(160deg,#F2EEE3 0%, #E7E9DC 45%, #DCE3D2 100%);text-align:center;}
+.page-hero h1{font-size:clamp(2.4rem,5vw,3.4rem);margin-bottom:16px;}
+.page-hero p{color:var(--color-text-light);max-width:560px;margin:0 auto;font-size:1.05rem;}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease, transform .6s ease;}
+.reveal.in-view{opacity:1;transform:translateY(0);}
+
+/* Filter bar */
+.filter-bar{background:var(--color-white);border-radius:20px;box-shadow:var(--shadow);padding:24px;margin-top:-40px;position:relative;z-index:5;}
+.search-input{
+  width:100%;padding:14px 20px;border-radius:999px;border:1.5px solid rgba(34,48,59,.14);
+  font-family:var(--font-body);font-size:1rem;color:var(--color-text);background:var(--color-cream);
+  margin-bottom:18px;
+}
+.search-input:focus{outline:none;border-color:var(--color-primary);}
+.category-tabs{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
+.tab-btn{
+  padding:10px 20px;border-radius:999px;border:1.5px solid rgba(34,48,59,.14);background:var(--color-cream);
+  font-family:var(--font-body);font-size:.88rem;font-weight:500;cursor:pointer;transition:all .2s ease;color:var(--color-text);
+}
+.tab-btn.active,.tab-btn:hover{background:var(--color-primary);color:var(--color-white);border-color:var(--color-primary);}
+.no-results{text-align:center;padding:60px 20px;color:var(--color-text-light);display:none;}
+.no-results.show{display:block;}
+
+/* Service category groups */
+.category-group{margin-top:64px;}
+.category-title{display:flex;align-items:baseline;gap:16px;margin-bottom:28px;}
+.category-title h2{font-size:1.9rem;}
+.category-title span{font-size:.85rem;color:var(--color-text-light);}
+.service-list{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+@media(max-width:760px){.service-list{grid-template-columns:1fr;}}
+
+.service-item{
+  background:var(--color-white);border-radius:14px;padding:22px 24px;
+  box-shadow:0 4px 16px rgba(34,48,59,.06);transition:transform .25s ease, box-shadow .25s ease;
+  border:1px solid rgba(34,48,59,.05);
+}
+.service-item:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);}
+.service-item .row{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;}
+.service-item h3{font-size:1.15rem;}
+.service-item .price-tag{font-family:var(--font-heading);font-weight:700;color:var(--color-primary-dark);font-size:1.2rem;white-space:nowrap;}
+.service-item .duration{font-size:.78rem;color:var(--color-accent);text-transform:uppercase;letter-spacing:.05em;margin-top:4px;display:inline-block;}
+.service-item p.desc{font-size:.88rem;color:var(--color-text-light);margin-top:10px;}
+.service-item.hidden{display:none;}
+.category-group.hidden{display:none;}
+
+/* CTA final (shared) */
+.cta-final{background:linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);color:var(--color-white);border-radius:28px;padding:70px 50px;margin:96px 24px 0;text-align:center;}
+.cta-final h2{color:var(--color-white);font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:16px;}
+.cta-final p{color:rgba(255,255,255,.9);max-width:520px;margin:0 auto 34px;}
+.cta-final .actions{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;}
+.cta-final .btn-primary{background:var(--color-white);color:var(--color-primary-dark);}
+.cta-final .btn-primary:hover{background:var(--color-cream);}
+.cta-final .btn-outline{border-color:rgba(255,255,255,.7);color:var(--color-white);}
+.cta-final .btn-outline:hover{background:rgba(255,255,255,.15);}
+
+/* Footer (shared) */
+.site-footer{background:var(--color-dark);color:rgba(255,255,255,.82);padding:70px 0 24px;margin-top:70px;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:46px;border-bottom:1px solid rgba(255,255,255,.12);}
+.site-footer .logo-img{filter:brightness(0) invert(1);opacity:.95;}
+.footer-brand p{margin-top:16px;font-size:.9rem;color:rgba(255,255,255,.6);max-width:280px;}
+.footer-col h4{color:var(--color-white);font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:18px;font-weight:600;}
+.footer-col a,.footer-col p{display:block;font-size:.92rem;color:rgba(255,255,255,.7);margin-bottom:10px;}
+.footer-col a:hover{color:var(--color-white);}
+.footer-social{display:flex;gap:12px;margin-top:6px;}
+.footer-social a{width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;transition:background .25s ease;}
+.footer-social a:hover{background:var(--color-primary);}
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:24px;font-size:.8rem;color:rgba(255,255,255,.5);}
+@media(max-width:860px){.footer-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:560px){.footer-grid{grid-template-columns:1fr;}.footer-bottom{flex-direction:column;text-align:center;}}
+</style>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="Cristina Pozo Belleza & Bienestar - Logo" class="logo-img" />
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html" class="active">Servicios</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+34615923168" class="phone-link">615 92 31 68</a>
+      <a href="contacto.html" class="btn btn-primary">Reservar cita</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">&#9776;</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow reveal">Precios y tratamientos</span>
+    <h1 class="reveal">Nuestros servicios</h1>
+    <p class="reveal">62 tratamientos en depilación, estética facial, corporal y fotodepilación IPL.</p>
+  </div>
+</section>
+
+<div class="container">
+  <div class="filter-bar reveal">
+    <input type="text" class="search-input" id="searchInput" placeholder="Busca un servicio... (ej. dermaplaning, cera piernas, masaje)" />
+    <div class="category-tabs" id="categoryTabs">
+      <button class="tab-btn active" data-cat="all">Todos</button>
+      <button class="tab-btn" data-cat="depilacion">Depilación</button>
+      <button class="tab-btn" data-cat="corporales">Tratamientos corporales</button>
+      <button class="tab-btn" data-cat="faciales">Tratamientos faciales</button>
+      <button class="tab-btn" data-cat="ipl">IPL</button>
+    </div>
+  </div>
+
+  <p class="no-results" id="noResults">No hemos encontrado ningún servicio con ese nombre. Prueba con otra palabra.</p>
+
+  <div class="category-group" data-cat="depilacion">
+    <div class="category-title reveal"><h2>Depilación</h2><span>22 servicios</span></div>
+    <div class="service-list">
+      <div class="service-item"><div class="row"><h3>Cera abdomen</h3><span class="price-tag">6,00 €</span></div><span class="duration">20 min</span><p class="desc">No incluye pecho. Para depilar también el pecho, seleccionar ambas zonas.</p></div>
+      <div class="service-item"><div class="row"><h3>Cera axilas</h3><span class="price-tag">4,00 €</span></div><span class="duration">15 min</span></div>
+      <div class="service-item"><div class="row"><h3>Cera brazos</h3><span class="price-tag">10,00 €</span></div><span class="duration">30 min</span></div>
+      <div class="service-item"><div class="row"><h3>Cera espalda</h3><span class="price-tag">9,50 €</span></div><span class="duration">30 min</span></div>
+      <div class="service-item"><div class="row"><h3>Cera glúteos</h3><span class="price-tag">6,00 €</span></div><span class="duration">20 min</span></div>
+      <div class="service-item"><div class="row"><h3>Cera ingles</h3><span class="price-tag">5,00 €</span></div><span class="duration">30 min</span><p class="desc">Ingles brasileña o línea del bikini. Para ingles integral, ver ese servicio.</p></div>
+      <div class="service-item"><div class="row"><h3>Cera ingles integral</h3><span class="price-tag">6,00 €</span></div><span class="duration">30 min</span><p class="desc">Pubis completo.</p></div>
+      <div class="service-item"><div class="row"><h3>Cera línea alba</h3><span class="price-tag">2,00 €</span></div><span class="duration">10 min</span></div>
+      <div class="service-item"><div class="row"><h3>Cera lumbar</h3><span class="price-tag">4,00 €</span></div><span class="duration">15 min</span><p class="desc">No incluye espalda.</p></div>
+      <div class="service-item"><div class="row"><h3>Cera medias piernas</h3><span class="price-tag">7,00 €</span></div><span class="duration">20 min</span></div>
+      <div class="service-item"><div class="row"><h3>Cera pecho</h3><span class="price-tag">9,50 €</span></div><span class="duration">20 min</span><p class="desc">No incluye abdomen.</p></div>
+      <div class="service-item"><div class="row"><h3>Cera piernas completas</h3><span class="price-tag">12,00 €</span></div><span class="duration">35 min</span></div>
+      <div class="service-item"><div class="row"><h3>Cejas</h3><span class="price-tag">3,00 €</span></div><span class="duration">12 min</span></div>
+      <div class="service-item"><div class="row"><h3>Cejas + labio</h3><span class="price-tag">4,00 €</span></div><span class="duration">15 min</span><p class="desc">Precio especial del pack.</p></div>
+      <div class="service-item"><div class="row"><h3>Cera facial</h3><span class="price-tag">5,00 €</span></div><span class="duration">20 min</span><p class="desc">Incluye cejas, labio superior, mentón y/o patillas.</p></div>
+      <div class="service-item"><div class="row"><h3>Cera muslos</h3><span class="price-tag">5,00 €</span></div><span class="duration">30 min</span></div>
+      <div class="service-item"><div class="row"><h3>IPL minizona</h3><span class="price-tag">10,00 €</span></div><span class="duration">5 min</span><p class="desc">Para cualquier minizona.</p></div>
+      <div class="service-item"><div class="row"><h3>Labio superior</h3><span class="price-tag">2,50 €</span></div><span class="duration">3 min</span></div>
+      <div class="service-item"><div class="row"><h3>Mentón</h3><span class="price-tag">2,50 €</span></div><span class="duration">10 min</span></div>
+      <div class="service-item"><div class="row"><h3>Masaje facial</h3><span class="price-tag">10,00 €</span></div><span class="duration">20 min</span><p class="desc">Masaje relajante con cosmética apropiada al tipo de piel; favorece la absorción de principios activos.</p></div>
+      <div class="service-item"><div class="row"><h3>Masaje relax 30'</h3><span class="price-tag">20,00 €</span></div><span class="duration">30 min</span><p class="desc">Masaje corporal de pies a cabeza con aceites hidratantes y esenciales.</p></div>
+      <div class="service-item"><div class="row"><h3>Masaje relax 50 min</h3><span class="price-tag">30,00 €</span></div><span class="duration">60 min</span><p class="desc">Masaje corporal completo de pies a cabeza con aceites hidratantes y esenciales.</p></div>
+    </div>
+  </div>
+
+  <div class="category-group" data-cat="corporales">
+    <div class="category-title reveal"><h2>Tratamientos corporales</h2><span>6 servicios</span></div>
+    <div class="service-list">
+      <div class="service-item"><div class="row"><h3>Chocolaterapia corporal</h3><span class="price-tag">50,00 €</span></div><span class="duration">60 min</span><p class="desc">Higiene, exfoliación, envoltura de chocolate, ducha y masaje de 15 min. Efecto antiestrés.</p></div>
+      <div class="service-item"><div class="row"><h3>Criolipólisis</h3><span class="price-tag">Consultar</span></div><span class="duration">60 min</span><p class="desc">Elimina grasa localizada por congelación de células adiposas. Primeros resultados en 2 semanas, definitivos en 2,5-3 meses.</p></div>
+      <div class="service-item"><div class="row"><h3>Limpieza profunda de espalda</h3><span class="price-tag">45,00 €</span></div><span class="duration">90 min</span></div>
+      <div class="service-item"><div class="row"><h3>Presoterapia pressology</h3><span class="price-tag">12,00 €</span></div><span class="duration">30 min</span><p class="desc">Reduce celulitis y grasa localizada, mejora la circulación y el drenaje veno-linfático.</p></div>
+      <div class="service-item"><div class="row"><h3>Detox</h3><span class="price-tag">50,00 €</span></div><span class="duration">60 min</span><p class="desc">Higiene superficial, exfoliación con sales minerales, envoltura de algas, ducha y masaje relajante de 30 min.</p></div>
+      <div class="service-item"><div class="row"><h3>Vendas reductoras</h3><span class="price-tag">40,00 €</span></div><span class="duration">30 min</span><p class="desc">Vendas con activos cosméticos: quema grasa, elimina toxinas, favorece circulación y reduce volumen. Combinable con presoterapia.</p></div>
+    </div>
+  </div>
+
+  <div class="category-group" data-cat="faciales">
+    <div class="category-title reveal"><h2>Tratamientos faciales</h2><span>23 servicios</span></div>
+    <div class="service-list">
+      <div class="service-item"><div class="row"><h3>Aquapure</h3><span class="price-tag">90,00 €</span></div><span class="duration">60 min</span><p class="desc">Limpieza en profundidad: elimina toxinas, regula la grasa y mejora arrugas y manchas.</p></div>
+      <div class="service-item"><div class="row"><h3>B-calm</h3><span class="price-tag">50,00 €</span></div><span class="duration">60 min</span><p class="desc">Tratamiento de choque para calmar la piel alterada o enrojecida.</p></div>
+      <div class="service-item"><div class="row"><h3>Cityproof</h3><span class="price-tag">60,00 €</span></div><span class="duration">60 min</span><p class="desc">Programa oxigenante anti-polución con dos mascarillas de alta tecnología.</p></div>
+      <div class="service-item"><div class="row"><h3>Dermaplaning</h3><span class="price-tag">70,00 €</span></div><span class="duration">60 min</span><p class="desc">Nuestro tratamiento facial estrella: exfoliación mecánica que afina la piel y minimiza el poro.</p></div>
+      <div class="service-item"><div class="row"><h3>Dermaplaning + dermapen</h3><span class="price-tag">85,00 €</span></div><span class="duration">90 min</span><p class="desc">Exfoliación mecánica combinada con micropunción para estimular colágeno y elastina.</p></div>
+      <div class="service-item"><div class="row"><h3>Dermatech pen</h3><span class="price-tag">70,00 €</span></div><span class="duration">60 min</span><p class="desc">Micropunción de última generación para rejuvenecimiento sin cirugía.</p></div>
+      <div class="service-item"><div class="row"><h3>Despigmentante</h3><span class="price-tag">350,00 €</span></div><span class="duration">60 min</span><p class="desc">Minimiza manchas existentes y controla su aparición.</p></div>
+      <div class="service-item"><div class="row"><h3>Extra microdermoabrasión</h3><span class="price-tag">12,00 €</span></div><span class="duration">10 min</span><p class="desc">Complemento para pulir la piel al inicio de otro tratamiento facial.</p></div>
+      <div class="service-item"><div class="row"><h3>Hydraluronic</h3><span class="price-tag">60,00 €</span></div><span class="duration">60 min</span><p class="desc">Ácido hialurónico + nanopolímero HLG: hidratación 24h y efecto relleno inmediato.</p></div>
+      <div class="service-item"><div class="row"><h3>Limpieza + microdermoabrasión</h3><span class="price-tag">35,00 €</span></div><span class="duration">90 min</span><p class="desc">Limpieza facial de 8 pasos + microdermoabrasión, incluye hidratación. Recomendada cada 3 meses.</p></div>
+      <div class="service-item"><div class="row"><h3>Peeling antioxidante con máscara LED</h3><span class="price-tag">60,00 €</span></div><span class="duration">60 min</span><p class="desc">Peeling químico antiedad de alta tolerancia, apto todo el año.</p></div>
+      <div class="service-item"><div class="row"><h3>Purexpert</h3><span class="price-tag">50,00 €</span></div><span class="duration">60 min</span><p class="desc">Renueva, restaura e hidrata. Ideal para pieles grasas, normales o mixtas.</p></div>
+      <div class="service-item"><div class="row"><h3>Rides</h3><span class="price-tag">60,00 €</span></div><span class="duration">60 min</span><p class="desc">Previene y elimina arrugas en tiempo récord (30 días con 3 sesiones).</p></div>
+      <div class="service-item"><div class="row"><h3>Vitamina C</h3><span class="price-tag">60,00 €</span></div><span class="duration">60 min</span><p class="desc">Anti-edad, contrarresta la glicación cutánea. Ideal para pieles apagadas o novias antes de la boda.</p></div>
+      <div class="service-item"><div class="row"><h3>Wrink less</h3><span class="price-tag">60,00 €</span></div><span class="duration">60 min</span><p class="desc">Previene y neutraliza arrugas, mantiene la piel lisa y elástica.</p></div>
+      <div class="service-item"><div class="row"><h3>Lift (in)</h3><span class="price-tag">60,00 €</span></div><span class="duration">60 min</span><p class="desc">Alternativa al lifting médico: mejora la elasticidad y firmeza desde la primera sesión.</p></div>
+      <div class="service-item"><div class="row"><h3>Limpieza facial + dermaplaning</h3><span class="price-tag">99,00 €</span></div><span class="duration">90 min</span><p class="desc">Limpieza con extracción combinada con dermaplaning.</p></div>
+      <div class="service-item"><div class="row"><h3>Limpieza + dermaplaning + tratamiento específico</h3><span class="price-tag">120,00 €</span></div><span class="duration">90 min</span><p class="desc">Incluye mascarilla específica a elegir (vitamina C, ácido hialurónico, lifting...).</p></div>
+      <div class="service-item"><div class="row"><h3>Limpieza facial + vinoterapia</h3><span class="price-tag">38,00 €</span></div><span class="duration">90 min</span><p class="desc">Limpieza profunda + mascarilla de vino tinto antioxidante. Ideal para cheque regalo.</p></div>
+      <div class="service-item"><div class="row"><h3>Limpieza + chocolaterapia</h3><span class="price-tag">38,00 €</span></div><span class="duration">90 min</span><p class="desc">Limpieza profunda + ritual de chocolaterapia antiestrés.</p></div>
+      <div class="service-item"><div class="row"><h3>Máscara LED</h3><span class="price-tag">12,00 €</span></div><span class="duration">15 min</span><p class="desc">4 colores/soluciones: rojo (antiedad), morado (imperfecciones), verde (manchas), naranja (calmante).</p></div>
+      <div class="service-item"><div class="row"><h3>SRNS</h3><span class="price-tag">60,00 €</span></div><span class="duration">60 min</span><p class="desc">Tratamiento facial antiedad global: restaura, recupera y rellena.</p></div>
+      <div class="service-item"><div class="row"><h3>Superpeel</h3><span class="price-tag">70,00 €</span></div><span class="duration">60 min</span><p class="desc">"Súper Peel by Cristina Pozo": peeling vegetal profundo. Se realiza en 2 días consecutivos (precio incluye ambos días).</p></div>
+    </div>
+  </div>
+
+  <div class="category-group" data-cat="ipl">
+    <div class="category-title reveal"><h2>IPL — Fotodepilación</h2><span>11 servicios</span></div>
+    <div class="service-list">
+      <div class="service-item"><div class="row"><h3>IPL facial</h3><span class="price-tag">25,00 €</span></div><span class="duration">15 min</span><p class="desc">Incluye mentón, patillas, labio superior y pómulos.</p></div>
+      <div class="service-item"><div class="row"><h3>IPL abdomen</h3><span class="price-tag">25,00 €</span></div><span class="duration">20 min</span><p class="desc">No incluye pecho.</p></div>
+      <div class="service-item"><div class="row"><h3>IPL axilas</h3><span class="price-tag">25,00 €</span></div><span class="duration">5 min</span></div>
+      <div class="service-item"><div class="row"><h3>IPL brazos</h3><span class="price-tag">25,00 €</span></div><span class="duration">30 min</span></div>
+      <div class="service-item"><div class="row"><h3>IPL espalda</h3><span class="price-tag">25,00 €</span></div><span class="duration">20 min</span><p class="desc">No incluye lumbar.</p></div>
+      <div class="service-item"><div class="row"><h3>IPL glúteos</h3><span class="price-tag">25,00 €</span></div><span class="duration">15 min</span></div>
+      <div class="service-item"><div class="row"><h3>IPL ingles</h3><span class="price-tag">25,00 €</span></div><span class="duration">15 min</span><p class="desc">Precio único, con o sin pubis completo.</p></div>
+      <div class="service-item"><div class="row"><h3>IPL lumbar</h3><span class="price-tag">25,00 €</span></div><span class="duration">20 min</span><p class="desc">No incluye espalda.</p></div>
+      <div class="service-item"><div class="row"><h3>IPL medias piernas</h3><span class="price-tag">25,00 €</span></div><span class="duration">30 min</span></div>
+      <div class="service-item"><div class="row"><h3>IPL muslos</h3><span class="price-tag">25,00 €</span></div><span class="duration">40 min</span></div>
+      <div class="service-item"><div class="row"><h3>IPL pecho</h3><span class="price-tag">25,00 €</span></div><span class="duration">20 min</span><p class="desc">No incluye abdomen.</p></div>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="cta-final reveal">
+    <h2>¿Tienes dudas sobre algún tratamiento?</h2>
+    <p>Escríbenos por WhatsApp y te ayudamos a elegir el tratamiento perfecto para ti.</p>
+    <div class="actions">
+      <a href="https://wa.me/34615923168" target="_blank" rel="noopener" class="btn btn-primary">WhatsApp</a>
+      <a href="contacto.html" class="btn btn-outline">Reservar cita</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img src="assets/logo.png" alt="Cristina Pozo Belleza & Bienestar - Logo" class="logo-img" />
+        </a>
+        <p>Centro de estética integral. Salud, belleza y bienestar de la mano, con trato cercano e individualizado.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="tel:+34615923168">615 92 31 68</a>
+        <a href="https://wa.me/34615923168" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:empleocristinapozo@gmx.es">empleocristinapozo@gmx.es</a>
+      </div>
+      <div class="footer-col">
+        <h4>Dirección</h4>
+        <p>Calle Marchena 48<br>La Puebla de Cazalla, España</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">i</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Cristina Pozo Belleza &amp; Bienestar. Todos los derechos reservados.</span>
+      <span>La Puebla de Cazalla, España</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var header = document.getElementById('siteHeader');
+  var nav = document.getElementById('mainNav');
+  var toggle = document.getElementById('navToggle');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 40){ header.classList.add('scrolled'); } else { header.classList.remove('scrolled'); }
+  });
+  toggle.addEventListener('click', function(){ nav.classList.toggle('open'); });
+  nav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ nav.classList.remove('open'); }); });
+
+  var revealEls = document.querySelectorAll('.reveal');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){ entry.target.classList.add('in-view'); io.unobserve(entry.target); }
+    });
+  }, {threshold:.12});
+  revealEls.forEach(function(el){ io.observe(el); });
+
+  var searchInput = document.getElementById('searchInput');
+  var tabs = document.querySelectorAll('.tab-btn');
+  var groups = document.querySelectorAll('.category-group');
+  var noResults = document.getElementById('noResults');
+  var activeCat = 'all';
+
+  function applyFilters(){
+    var query = searchInput.value.trim().toLowerCase();
+    var totalVisible = 0;
+
+    groups.forEach(function(group){
+      var cat = group.getAttribute('data-cat');
+      var catMatches = (activeCat === 'all' || activeCat === cat);
+      var groupVisibleCount = 0;
+
+      group.querySelectorAll('.service-item').forEach(function(item){
+        var text = item.textContent.toLowerCase();
+        var textMatches = query === '' || text.indexOf(query) !== -1;
+        var show = catMatches && textMatches;
+        item.classList.toggle('hidden', !show);
+        if(show) groupVisibleCount++;
+      });
+
+      group.classList.toggle('hidden', groupVisibleCount === 0);
+      totalVisible += groupVisibleCount;
+    });
+
+    noResults.classList.toggle('show', totalVisible === 0);
+  }
+
+  searchInput.addEventListener('input', applyFilters);
+  tabs.forEach(function(tab){
+    tab.addEventListener('click', function(){
+      tabs.forEach(function(t){ t.classList.remove('active'); });
+      tab.classList.add('active');
+      activeCat = tab.getAttribute('data-cat');
+      applyFilters();
+    });
+  });
+})();
+</script>
+</body>
+</html>

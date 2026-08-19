@@ -1,0 +1,9 @@
+Assets instalados:
+- logo.png             -> logo real (cabecera y pie de página)
+- hero.mp4             -> vídeo de la portada (efecto scroll tipo Apple, index.html)
+- hero-poster.jpg       -> foto de la fachada, usada como imagen de portada, vista previa
+                          al compartir el enlace (og:image) y fondo del mapa en contacto.html
+- clientassaliendo.jpg  -> foto de clientas entrando, usada en nosotros.html
+
+Pendiente (opcional): más fotos del interior del centro (mostrador, cabina, productos)
+si en algún momento quieres ampliar la galería.
