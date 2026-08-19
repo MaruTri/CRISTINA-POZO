@@ -85,6 +85,18 @@ h1,h2,h3,h4{font-family:var(--font-heading);font-weight:600;color:var(--color-da
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
 @media(max-width:900px){.contact-grid{grid-template-columns:1fr;}}
 
+.booking-banner{
+  background:linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  border-radius:28px;padding:48px 50px;color:#fff;
+  display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;
+}
+.booking-banner-text{max-width:560px;}
+.booking-banner-text h2{color:#fff;font-size:clamp(1.5rem,3vw,2rem);margin:6px 0 12px;}
+.booking-banner-text p{color:rgba(255,255,255,.88);font-size:.95rem;}
+.booking-banner .btn-primary{background:#fff;color:var(--color-primary-dark);flex-shrink:0;}
+.booking-banner .btn-primary:hover{background:var(--color-cream);}
+@media(max-width:700px){.booking-banner{padding:36px 30px;}}
+
 .info-card{background:var(--color-white);border-radius:var(--radius);box-shadow:var(--shadow);padding:36px;margin-bottom:22px;}
 .info-card h3{font-size:1.15rem;margin-bottom:18px;color:var(--color-dark);}
 .info-row{display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:1px solid rgba(34,48,59,.06);}
@@ -147,6 +159,19 @@ h1,h2,h3,h4{font-family:var(--font-heading);font-weight:600;color:var(--color-da
 .footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:24px;font-size:.8rem;color:rgba(255,255,255,.5);}
 @media(max-width:860px){.footer-grid{grid-template-columns:1fr 1fr;}}
 @media(max-width:560px){.footer-grid{grid-template-columns:1fr;}.footer-bottom{flex-direction:column;text-align:center;}}
+
+/* WhatsApp floating button */
+.whatsapp-float{
+  position:fixed;bottom:26px;right:26px;z-index:200;
+  width:60px;height:60px;border-radius:50%;
+  background:#25D366;color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 28px rgba(37,211,102,.45);
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.whatsapp-float:hover{transform:scale(1.08);box-shadow:0 14px 34px rgba(37,211,102,.55);}
+.whatsapp-float svg{width:30px;height:30px;}
+@media(max-width:560px){.whatsapp-float{width:54px;height:54px;bottom:18px;right:18px;}.whatsapp-float svg{width:27px;height:27px;}}
 </style>
 </head>
 <body>
@@ -164,7 +189,7 @@ h1,h2,h3,h4{font-family:var(--font-heading);font-weight:600;color:var(--color-da
     </nav>
     <div class="header-actions">
       <a href="tel:+34615923168" class="phone-link">615 92 31 68</a>
-      <a href="contacto.html" class="btn btn-primary">Reservar cita</a>
+      <a href="https://web.bewe.co/cristinapozo" target="_blank" rel="noopener" class="btn btn-primary">Reservar cita</a>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">&#9776;</button>
   </div>
@@ -175,6 +200,19 @@ h1,h2,h3,h4{font-family:var(--font-heading);font-weight:600;color:var(--color-da
     <span class="eyebrow reveal">Contacto</span>
     <h1 class="reveal">Reserva tu cita</h1>
     <p class="reveal">Escríbenos, llámanos o pásate por el centro — estaremos encantadas de atenderte.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-bottom:0;">
+  <div class="container">
+    <div class="booking-banner reveal">
+      <div class="booking-banner-text">
+        <span class="eyebrow" style="color:rgba(255,255,255,.8);">Reserva online</span>
+        <h2>Elige tu tratamiento, tu hora y paga por adelantado</h2>
+        <p>Accede a nuestro calendario real de citas: eliges el servicio, el día y la hora que mejor te vengan, y puedes pagar tu cita por adelantado, todo en un mismo sitio.</p>
+      </div>
+      <a href="https://web.bewe.co/cristinapozo" target="_blank" rel="noopener" class="btn btn-primary">Reservar y pagar online</a>
+    </div>
   </div>
 </section>
 
@@ -214,8 +252,8 @@ h1,h2,h3,h4{font-family:var(--font-heading);font-weight:600;color:var(--color-da
       </div>
 
       <div class="form-card reveal d1">
-        <h2>Solicita tu cita</h2>
-        <p>Rellena el formulario y te confirmamos disponibilidad lo antes posible. También puedes escribirnos directamente por WhatsApp.</p>
+        <h2>¿Prefieres que te llamemos nosotras?</h2>
+        <p>Si no quieres reservar tú misma en el calendario online, déjanos tus datos y te contactamos para confirmar la cita. También puedes escribirnos directamente por WhatsApp.</p>
         <form id="contactForm">
           <div class="form-group">
             <label for="nombre">Nombre y apellidos</label>
@@ -286,6 +324,12 @@ h1,h2,h3,h4{font-family:var(--font-heading);font-weight:600;color:var(--color-da
     </div>
   </div>
 </footer>
+
+<a href="https://wa.me/34615923168" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16.001 3C9.11 3 3.5 8.61 3.5 15.5c0 2.34.63 4.53 1.73 6.42L3 29l7.27-2.19a12.44 12.44 0 0 0 5.73 1.41h.01c6.9 0 12.5-5.61 12.5-12.5C28.51 8.61 22.9 3 16.001 3zm0 22.79h-.01a10.4 10.4 0 0 1-5.3-1.45l-.38-.22-3.95 1.19 1.21-3.85-.25-.4a10.31 10.31 0 0 1-1.58-5.56c0-5.73 4.66-10.39 10.4-10.39 2.78 0 5.39 1.08 7.35 3.05a10.32 10.32 0 0 1 3.05 7.35c0 5.73-4.66 10.28-10.54 10.28zm5.71-7.71c-.31-.16-1.85-.91-2.14-1.02-.29-.11-.5-.16-.71.16-.21.31-.81 1.02-1 1.23-.18.21-.37.23-.68.08-.31-.16-1.32-.49-2.51-1.55-.93-.83-1.56-1.85-1.74-2.16-.18-.31-.02-.48.14-.63.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.11-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.54-.71-.55-.18-.01-.39-.01-.6-.01-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.63 0 1.55 1.13 3.05 1.29 3.26.16.21 2.22 3.39 5.38 4.75.75.32 1.34.51 1.8.66.76.24 1.44.21 1.99.13.61-.09 1.85-.76 2.11-1.49.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.37z"/>
+  </svg>
+</a>
 
 <script>
 (function(){
